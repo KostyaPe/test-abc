@@ -112,6 +112,17 @@ function zodiacSign(day, month) {
     return sign;
 }
 
+function scroll(element) {
+    let bodyRect = document.body.getBoundingClientRect(),
+    elemRect = element.getBoundingClientRect(),
+    offset   = elemRect.top - bodyRect.top;
+
+    window.scrollTo({
+        top: offset,
+        behavior: "smooth"
+    });
+}
+
 function nextStep() {
     if(activeStepIndex === 0) document.querySelector('.pre-quiz').style.display = "none";
 
@@ -175,6 +186,7 @@ function showSubmitButton() {
     const btn = quizSteps[activeStepIndex].querySelector('.quiz__submit');
     btn.style.display = "block";
     btn.addEventListener('click', nextStep);
+    scroll(btn);
 
     if(activeStepIndex === 5) {
         const values = quizSteps[activeStepIndex].querySelectorAll('select');

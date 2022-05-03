@@ -71,6 +71,7 @@ html {
 .quiz {
     display: none;
     margin-top: 16px;
+    margin-bottom: 10px;
 }
 
 .quiz.active {
@@ -98,7 +99,7 @@ html {
     text-align: center;
     font-weight: bold;
     background: #343B4D;
-    padding: 16px 0;
+    padding: 16px 10px;
     color: white;
 }
 
