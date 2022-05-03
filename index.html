@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <h1 class="header__heading">
+                Новый гороскоп на <span class="current-year"></span> год!
+            </h1>
+            <p>
+                Узнайте, что Вас ждёт.
+            </p>
+        </div>
+    </header>
+    <div class="wrapper">
+        <section class="pre-quiz">
+            <div class="horoscope-img">
+                <img src="images/signs_bg.png" alt="alt">
+                <img src="images/signs.png" alt="alt" class="signs">
+            </div>
+            <h2 class="pre-quiz__heading heading">
+                Узнайте, как 2021 год изменит жизнь каждого из нас!
+            </h2>
+            <p class="pre-quiz__text plain-text">
+                К сожалению, 2020 год принес нам немало неприятностей, даже откровенных проблем и несчастий. Не смотря
+                на это, 3 знака зодиака очень скоро обретут долгожданное счастье! 2021 год затронет своими потрясениями
+                каждого из нас.
+            </p>
+        </section>
+        <div class="quiz__progress-bar">
+            <div></div>
+        </div>
+        <section class="quiz active" data-step="1">
+            <div class="quiz__question">
+                Укажите свой пол:
+            </div>
+            <div class="quiz__answers">
+                <div class="quiz__answer">
+                    <input type="radio" name="gender" value="мужчина" id="first">
+                    <label for="first">Мужчина</label>
+                </div>
+                <div class="quiz__answer">
+                    <input type="radio" name="gender" value="женщина" id="second">
+                    <label for="second">Женщина</label>
+                </div>
+            </div>
+            <button class="quiz__submit">Далее</button>
+        </section>
+        <section class="quiz" data-step="2">
+            <div class="quiz__question">
+                В какое время суток Вы чувствуете себя наиболее комфортно?
+            </div>
+            <div class="quiz__answers">
+                <div class="quiz__answer">
+                    <input type="radio" name="partday" value="Утро" id="first_s">
+                    <label for="first_s">Утро</label>
+                </div>
+                <div class="quiz__answer">
+                    <input type="radio" name="partday" value="Ночь" id="second_s">
+                    <label for="second_s">Ночь</label>
+                </div>
+                <div class="quiz__answer">
+                    <input type="radio" name="partday" value="Вечер" id="third_s">
+                    <label for="third_s">Вечер</label>
+                </div>
+                <div class="quiz__answer">
+                    <input type="radio" name="partday" value="День" id="fourth_s">
+                    <label for="fourth_s">День</label>
+                </div>
+            </div>
+            <button class="quiz__submit">Далее</button>
+        </section>
+        <section class="quiz" data-step="3">
+            <div class="quiz__question">
+                Подскажите, мучает ли Вас бессонница последнее время?
+            </div>
+            <div class="quiz__answers">
+                <div class="quiz__answer">
+                    <input type="radio" name="partday" value="Да" id="first_t">
+                    <label for="first_t">Да</label>
+                </div>
+                <div class="quiz__answer">
+                    <input type="radio" name="partday" value="Нет" id="second_t">
+                    <label for="second_t">Нет</label>
+                </div>
+                <div class="quiz__answer">
+                    <input type="radio" name="partday" value="Иногда" id="third_t">
+                    <label for="third_t">Иногда</label>
+                </div>
+            </div>
+            <button class="quiz__submit">Далее</button>
+        </section>
+        <section class="quiz" data-step="4">
+            <div class="quiz__question">
+                Чувствуете ли Вы в последнее время, что вам никак не удается осуществить ваши планы?
+            </div>
+            <div class="quiz__answers">
+                <div class="quiz__answer">
+                    <input type="radio" name="partday" value="Да" id="first_f">
+                    <label for="first_f">Да</label>
+                </div>
+                <div class="quiz__answer">
+                    <input type="radio" name="partday" value="Нет" id="second_f">
+                    <label for="second_f">Нет</label>
+                </div>
+                <div class="quiz__answer">
+                    <input type="radio" name="partday" value="Иногда" id="third_f">
+                    <label for="third_f">Иногда</label>
+                </div>
+            </div>
+            <button class="quiz__submit">Далее</button>
+        </section>
+        <section class="quiz" data-step="5">
+            <div class="quiz__question">
+                Какой Вы видите свою жизнь через 5 лет?
+            </div>
+            <div class="quiz__answers">
+                <div class="quiz__answer">
+                    <input type="radio" name="partday" value="Да" id="first_e">
+                    <label for="first_e">Брак, семья, дети, дом</label>
+                </div>
+                <div class="quiz__answer">
+                    <input type="radio" name="partday" value="Нет" id="second_e">
+                    <label for="second_e">Путешествия по Миру</label>
+                </div>
+                <div class="quiz__answer">
+                    <input type="radio" name="partday" value="Иногда" id="third_e">
+                    <label for="third_e">Путешествия по Миру</label>
+                </div>
+                <div class="quiz__answer">
+                    <input type="radio" name="partday" value="Иногда" id="third_e">
+                    <label for="third_e">Всё вместе</label>
+                </div>
+            </div>
+            <button class="quiz__submit">Далее</button>
+        </section>
+        <section class="quiz" data-step="6">
+            <div class="quiz__question">
+                Введите дату своего рождения:
+            </div>
+            <div class="quiz__answers">
+                <div class="quiz__answer">
+                    <select name="day" id="day">
+                        <option value="День">День</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                </div>
+                <div class="quiz__answer">
+                    <select name="month" id="month">
+                        <option value="Месяц">Месяц</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="quiz__answer">
+                    <select name="year" id="year">
+                        <option value="Год">Год</option>
+                    </select>
+                </div>
+                <div class="invalid-message">
+                    Пожалуйста, выберите ответ
+                </div>
+                <div class="zodiac">
+                    <img src="" alt="alt">
+                    <span></span>
+                </div>
+            </div>
+            <button class="quiz__submit">Далее</button>
+        </section>
+        <section class="quiz-finish">
+            <div class="proccessing-data">
+                <span></span>
+                <div>
+
+                </div>
+            </div>
+            <div class="process-step">
+                <p>
+                    Анализ введенных данных .............
+                    <span></span>
+                </p>
+            </div>
+            <div class="process-step">
+                <p>
+                    Коррекция астрологического знака .............
+                    <span></span>
+                </p>
+            </div>
+            <div class="process-step">
+                <p>
+                    Расчет вариаций ответов .............
+                    <span></span>
+                </p>
+            </div>
+            <div class="process-step">
+                <p>
+                    Генерация предсказания .............
+                    <span></span>
+                </p>
+            </div>
+            <div class="process-step">
+                <p>
+                    Сохранение результата .............
+                    <span></span>
+                </p>
+            </div>
+            <div class="process-step">
+                <p>
+                    Поиск свободного оператора .............
+                    <span></span>
+                </p>
+            </div>
+            <div class="recording">
+                <b>Идёт запись</b>
+            </div>
+        </section>
+        <section class="call">
+            <p class="plain-text">
+                <b>Спасибо за Ваши ответы!</b>
+            </p>
+            <h2 class="heading">
+                Поздравляем! Прослушать свой персональный гороскоп возможно уже сейчас!
+            </h2>
+            <h3>
+                <span class="current-year"></span> год Вас ошарашит!
+            </h3>
+            <p class="plain-text">
+                Вас ждёт то, чего Вы никак не ожидали. Первые известия Вы получите совсем скоро, возможно это 17-18
+                ноября!
+            </p>
+
+            <p class="plain-text">
+                Что бы прослушать аудио-сообщение, необходимо нажать на кнопку ниже и позвонить со своего мобильного
+                телефона. Позвоните и Прослушайте очень серьезную информацию!
+            </p>
+
+            <button class="call-button">
+                Звонить и слушать
+            </button>
+        </section>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
